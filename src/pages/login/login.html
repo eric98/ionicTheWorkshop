@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card center>
+    <ion-card-header>
+      Dades de l'usuari
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label fixed>Usuari:</ion-label>
+          <ion-input type="text"[(ngModel)]="user"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label fixed>Contrasenya:</ion-label>
+          <ion-input type="text"[(ngModel)]="pass"></ion-input>
+        </ion-item>
+      </ion-list>
+      <div padding>
+        <button ion-button block (click)="Signup()">Sign up</button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
