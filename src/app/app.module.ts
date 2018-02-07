@@ -10,13 +10,15 @@ import { LoginPage} from "../pages/login/login";
 import {OrdersPage} from "../pages/orders/orders";
 import {HttpClientModule} from "@angular/common/http";
 import {TWSOrders} from "../providers/tws-orders/tws-orders";
+import {ShowOrderPage} from "../pages/showOrder/showOrder";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     LoginPage,
-    OrdersPage
+    OrdersPage,
+    ShowOrderPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {TWSOrders} from "../providers/tws-orders/tws-orders";
     MyApp,
     HomePage,
     LoginPage,
-    OrdersPage
+    OrdersPage,
+    ShowOrderPage
   ],
   providers: [
     StatusBar,
