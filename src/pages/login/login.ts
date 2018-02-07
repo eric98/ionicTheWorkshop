@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HomePage} from "../home/home";
+import {OrdersPage} from "../orders/orders";
 
 
 @IonicPage()
@@ -26,7 +27,7 @@ export class LoginPage {
       this.isLogged = true
     }
     if (this.isLogged) {
-      this.navCtrl.setRoot(HomePage)
+      this.navCtrl.setRoot(OrdersPage)
         .then(data => console.log(data),
           error => console.log(error))
     } else {
